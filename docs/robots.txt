@@ -1,0 +1,4 @@
+# robots google
+User-agent: * 
+Allow: /
+Sitemap: https://pctester.cl/sitemap.xml
