@@ -14,7 +14,7 @@
 
     if (navigator.platform === "Win32") {
       const url = json.assets.find((asset) =>
-        asset.browser_download_url.includes(".msi")
+        asset.browser_download_url.includes("x86_64.exe")
       );
       idSoftwareRemoto?.setAttribute("href", url.browser_download_url);
       //console.log(url.browser_download_url);
