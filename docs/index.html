@@ -314,6 +314,9 @@
         <div class="form">
           <div id="sendmessage">Muchas gracias! Lo contactarémos pronto!</div>
           <div id="errormessage"></div>
+          <div id="errormessageturnstile" class="alert alert-danger" role="alert" style="display: none;">
+            Por favor, completa el desafío del captcha.
+        </div>
           <form method="post" class="contactForm" id="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6"><input type="text" name="name" class="form-control" id="name"
@@ -353,7 +356,7 @@
             </div>
             <div class="form-group">
               <div class="form-group">
-                <div class="cf-turnstile" data-sitekey="0x4AAAAAAA_pq3kua9q6DqiI"></div>
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAAA_pq3kua9q6DqiI" data-callback="turnstileCallback"></div>
               </div>
             </div>
             <div class="text-center"><button type="submit">Enviar mensaje</button></div>
